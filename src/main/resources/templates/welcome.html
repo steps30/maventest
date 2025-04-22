@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inventory Management</h2>
+
+    <form action="#" method="post">
+        <label for="productName">Product Name:</label><br>
+        <input type="text" id="productName" name="productName"><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity"><br>
+
+        <label for="price">Price per Unit:</label><br>
+        <input type="number" id="price" name="price" step="0.01"><br>
+
+        <button type="submit">Add to Inventory</button>
+    </form>
+
+    <form action="/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
